@@ -29,14 +29,13 @@
       display: flex;
       flex-direction: column;
       min-height: 100vh;
-      overflow-x: hidden; /* preserved existing overflow rule */
     }
-    main { flex: 1 0 auto; }
+    main { flex: 1; }
     /* ------------------------------------------------ */
 
     *{box-sizing:border-box;margin:0;padding:0}
-    body{background:var(--bg);color:var(--dark);line-height:1.6}
-    
+    body{background:var(--bg);color:var(--dark);line-height:1.6;overflow-x:hidden}
+
     /* HEADER */
     header{
       background:rgba(255,255,255,0.9);
