@@ -20,9 +20,22 @@
       --border:#e2e8f0;
       font-family: 'Inter', system-ui, -apple-system, sans-serif;
     }
+
+    /* ---------- MINIMAL LAYOUT FIX ADDED ----------
+       Ensure footer sits at the bottom when content is short
+       (only layout properties added — no other visual changes) */
+    html, body { height: 100%; }
+    body {
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+    }
+    main { flex: 1; }
+    /* ------------------------------------------------ */
+
     *{box-sizing:border-box;margin:0;padding:0}
     body{background:var(--bg);color:var(--dark);line-height:1.6;overflow-x:hidden}
-    
+
     /* HEADER */
     header{
       background:rgba(255,255,255,0.9);
@@ -725,3 +738,5 @@
       </div>
     </div>
   </footer>
+</body>
+</html>
