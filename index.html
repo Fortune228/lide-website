@@ -360,4 +360,384 @@
       padding:60px 0 30px;
     }
     .footer-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:60px;margin-bottom:40px}
-    .footer-section h4{margin-bottom:20px;font-size:18px;font-weight:7
+    .footer-section h4{margin-bottom:20px;font-size:18px;font-weight:700}
+    .footer-section ul{list-style:none}
+    .footer-section a{color:rgba(255,255,255,0.7);text-decoration:none;display:block;padding:8px 0;transition:color 0.3s;font-size:15px}
+    .footer-section a:hover{color:#fff}
+    .social-links{display:flex;gap:16px;margin-top:12px}
+    .social-links a{width:40px;height:40px;background:rgba(255,255,255,0.1);border-radius:8px;display:flex;align-items:center;justify-content:center;font-size:20px;transition:all 0.3s}
+    .social-links a:hover{background:var(--primary);transform:translateY(-2px)}
+    .footer-bottom{border-top:1px solid rgba(255,255,255,0.1);padding-top:30px;text-align:center;color:rgba(255,255,255,0.6);font-size:14px}
+
+    /* RESPONSIVE */
+    @media (max-width:1024px){
+      .hero h2{font-size:44px}
+      .pricing-grid{grid-template-columns:repeat(auto-fit,minmax(300px,1fr))}
+      .vision-mission-grid{grid-template-columns:1fr}
+      .contact-grid{grid-template-columns:1fr}
+      .footer-grid{grid-template-columns:1fr}
+    }
+    @media (max-width:768px){
+      nav ul{display:none}
+      .hero h2{font-size:36px}
+      .hero p{font-size:18px}
+      .pricing-grid{grid-template-columns:1fr}
+      .vision-mission-grid{grid-template-columns:1fr}
+      .footer-grid{grid-template-columns:1fr}
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="container">
+      <div class="nav">
+        <a href="#home" class="brand">
+          <div class="logo">L</div>
+          <div class="brand-text">
+            <h1>LIDE</h1>
+            <p>Digital Transformation</p>
+          </div>
+        </a>
+        <nav>
+          <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#packages">Packages</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </nav>
+        <a class="cta" href="#contact">Get Started</a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="container">
+        <div class="hero-content">
+          <h2>Transform Your Digital Presence</h2>
+          <p>Professional Front Access packages for individuals, organizations, and enterprises. Choose your plan and let us build, maintain, and grow your digital ecosystem.</p>
+          <div class="hero-cta">
+            <a href="#packages" class="btn-primary">Explore Packages</a>
+            <a href="#about" class="btn-secondary">Learn About LIDE</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="about">
+      <div class="container">
+        <div class="section-header">
+          <h2>About LIDE</h2>
+          <p>A comprehensive framework designed for consistency, scalability, and exceptional user experiences.</p>
+        </div>
+        
+        <div class="about-content">
+          <div class="about-intro">
+            <p>The LIDE Framework is a sophisticated, layered design system engineered to deliver consistency and reusability across every digital touchpoint. Built on precise proportional scaling and predictable vertical rhythm, our framework ensures optimal readability and seamless responsiveness. From typography to interactive components, every element is crafted to adapt beautifully across devices while maintaining accessibility and visual excellence.</p>
+          </div>
+
+          <div class="vision-mission-grid">
+            <div class="vm-card">
+              <span class="vm-icon">🎯</span>
+              <h3>Our Vision</h3>
+              <p>To establish the gold standard in design systems—where predictability meets creativity. We envision digital experiences that are not only visually stunning but intuitively consistent, empowering organizations to deliver seamless user journeys that inspire confidence and drive engagement.</p>
+            </div>
+
+            <div class="vm-card">
+              <span class="vm-icon">🚀</span>
+              <h3>Our Mission</h3>
+              <p>To architect intelligent, reusable design components that scale effortlessly. Through strict layering, responsive flexibility, and accessible interfaces, we deliver systems that eliminate guesswork—enabling teams to build faster, maintain easier, and create experiences that truly resonate with users across every device.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="packages">
+      <div class="container">
+        <div class="section-header">
+          <h2>Front Access Packages</h2>
+          <p>Comprehensive digital solutions tailored to your needs. From startup presence to enterprise ecosystems.</p>
+        </div>
+
+        <div class="category-tabs">
+          <button class="tab active" data-category="individual">Individual</button>
+          <button class="tab" data-category="organization">Organization</button>
+          <button class="tab" data-category="enterprise">Enterprise</button>
+        </div>
+
+        <!-- INDIVIDUAL PACKAGES -->
+        <div class="package-category" data-category="individual">
+          <div class="pricing-grid">
+            <div class="pricing-card">
+              <span class="tier-badge">Startup</span>
+              <h3>Front Access</h3>
+              <div class="price">R120<span>/month</span></div>
+              <p style="color:var(--muted);margin-bottom:20px">Perfect for individuals starting their digital journey</p>
+              <ul class="features">
+                <li>Single-page profiling website</li>
+                <li>2 social media platforms</li>
+                <li>Up to 1 communication channel</li>
+                <li>Monthly maintenance included</li>
+              </ul>
+              <a href="#contact" class="card-cta">Get Started</a>
+            </div>
+
+            <div class="pricing-card">
+              <span class="tier-badge">Scale</span>
+              <h3>Front Access</h3>
+              <div class="price">R280<span>/month</span></div>
+              <p style="color:var(--muted);margin-bottom:20px">For growing personal brands and audience building</p>
+              <ul class="features">
+                <li>Basic website (up to 3 pages)</li>
+                <li>Up to 4 social media platforms</li>
+                <li>Up to 3 communication channels</li>
+                <li>Enhanced visibility tools</li>
+              </ul>
+              <a href="#contact" class="card-cta">Get Started</a>
+            </div>
+
+            <div class="pricing-card">
+              <span class="tier-badge">Advance</span>
+              <h3>Front Access</h3>
+              <div class="price">R760<span>/month</span></div>
+              <p style="color:var(--muted);margin-bottom:20px">Full managed presence for creators and consultants</p>
+              <ul class="features">
+                <li>Dynamic website (up to 5 pages)</li>
+                <li>Up to 5 connected social platforms</li>
+                <li>Community building tools</li>
+                <li>Weekly newsletter system</li>
+                <li>Up to 4 communication channels</li>
+              </ul>
+              <a href="#contact" class="card-cta">Get Started</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- ORGANIZATION PACKAGES -->
+        <div class="package-category" data-category="organization" style="display:none">
+          <div class="pricing-grid">
+            <div class="pricing-card">
+              <span class="tier-badge">Startup</span>
+              <h3>Front Access</h3>
+              <div class="price">R240<span>/month</span></div>
+              <p style="color:var(--muted);margin-bottom:20px">Solid foundation for growing organizations</p>
+              <ul class="features">
+                <li>Basic 2-4 page website</li>
+                <li>Up to 2 social media platforms</li>
+                <li>Up to 2 communication channels</li>
+                <li>Professional branding</li>
+              </ul>
+              <a href="#contact" class="card-cta">Get Started</a>
+            </div>
+
+            <div class="pricing-card">
+              <span class="tier-badge">Scale</span>
+              <h3>Front Access</h3>
+              <div class="price">R640<span>/month</span></div>
+              <p style="color:var(--muted);margin-bottom:20px">Expand visibility and public engagement</p>
+              <ul class="features">
+                <li>Purposeful website (4+ pages)</li>
+                <li>Up to 4 social media platforms</li>
+                <li>Up to 3 communication channels</li>
+                <li>Community building (digital)</li>
+                <li>Enhanced analytics</li>
+              </ul>
+              <a href="#contact" class="card-cta">Get Started</a>
+            </div>
+
+            <div class="pricing-card">
+              <span class="tier-badge">Advance</span>
+              <h3>Front Access</h3>
+              <div class="price">R1,300<span>/month</span></div>
+              <p style="color:var(--muted);margin-bottom:20px">Fully connected digital ecosystem</p>
+              <ul class="features">
+                <li>Full function dynamic website</li>
+                <li>Up to 7 social media platforms</li>
+                <li>Chatbot integration</li>
+                <li>Up to 5 communication channels</li>
+                <li>Community building (digital)</li>
+                <li>Priority support</li>
+              </ul>
+              <a href="#contact" class="card-cta">Get Started</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- ENTERPRISE PACKAGES -->
+        <div class="package-category" data-category="enterprise" style="display:none">
+          <div class="pricing-grid">
+            <div class="pricing-card">
+              <span class="tier-badge">Startup</span>
+              <h3>Front Access</h3>
+              <div class="price">R2,500<span>/month</span></div>
+              <p style="color:var(--muted);margin-bottom:20px">Professional corporate digital footprint</p>
+              <ul class="features">
+                <li>Branded landing platform</li>
+                <li>Verified communication channels</li>
+                <li>Up to 2 social media platforms</li>
+                <li>Monthly consultation check-ins</li>
+                <li>Performance summary reports</li>
+              </ul>
+              <a href="#contact" class="card-cta">Get Started</a>
+            </div>
+
+            <div class="pricing-card">
+              <span class="tier-badge">Scale</span>
+              <h3>Front Access</h3>
+              <div class="price">R2,400<span>/month</span></div>
+              <p style="color:var(--muted);margin-bottom:20px">Multi-channel enterprise communication</p>
+              <ul class="features">
+                <li>Multi-page website (up to 6 pages)</li>
+                <li>Up to 4 social media platforms</li>
+                <li>Automated inquiry systems</li>
+                <li>Monthly performance reviews</li>
+                <li>Analytics overview</li>
+                <li>Add-ons: Chatbot, Newsletter, Verification</li>
+              </ul>
+              <a href="#contact" class="card-cta">Get Started</a>
+            </div>
+
+            <div class="pricing-card">
+              <span class="tier-badge">Advance</span>
+              <h3>Front Access</h3>
+              <div class="price">R4,000<span>/month</span></div>
+              <p style="color:var(--muted);margin-bottom:20px">High-performance enterprise ecosystem</p>
+              <ul class="features">
+                <li>Dynamic website (up to 10 pages)</li>
+                <li>Up to 6 social media platforms</li>
+                <li>Advanced automation tools</li>
+                <li>Analytics dashboard</li>
+                <li>Dedicated support</li>
+                <li>Multiple add-ons available</li>
+              </ul>
+              <a href="#contact" class="card-cta">Get Started</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="note-box">
+          <h4>📋 Important Note</h4>
+          <p>Clients are responsible for setup fees. We create, maintain, and operate all products included in your package. Setup fees ensure you get exactly what you need. For example, standard social media profiles incur no fee, but verification setup is quoted separately and paid by the client.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="why-choose">
+      <div class="container">
+        <div class="section-header">
+          <h2>Why Choose LIDE?</h2>
+          <p>We combine strategy, technology, and ongoing support to deliver digital solutions that work.</p>
+        </div>
+        <div class="why-grid">
+          <div class="why-card">
+            <h3>🚀 Fast Setup</h3>
+            <p style="color:var(--muted);margin-top:12px">Get online quickly with our streamlined onboarding process. Your digital presence launches in days, not months.</p>
+          </div>
+          <div class="why-card">
+            <h3>🔧 Full Management</h3>
+            <p style="color:var(--muted);margin-top:12px">We handle everything from maintenance to updates. Focus on your business while we manage your digital infrastructure.</p>
+          </div>
+          <div class="why-card">
+            <h3>📈 Scalable Growth</h3>
+            <p style="color:var(--muted);margin-top:12px">Start small and scale up as you grow. Upgrade your package anytime to access more features and channels.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact-section" id="contact">
+      <div class="container">
+        <div class="section-header">
+          <h2>Get Started Today</h2>
+          <p>Tell us about your needs and we'll help you choose the perfect package.</p>
+        </div>
+        <div class="contact-grid">
+          <div class="contact-form">
+            <form id="contactForm">
+              <div class="form-group">
+                <label for="name">Full Name</label>
+                <input type="text" id="name" required placeholder="Your full name">
+              </div>
+              <div class="form-group">
+                <label for="email">Email Address</label>
+                <input type="email" id="email" required placeholder="you@example.com">
+              </div>
+              <div class="form-group">
+                <label for="package">Interested Package</label>
+                <select id="package" required>
+                  <option value="">Select a package type</option>
+                  <option value="individual">Individual Package</option>
+                  <option value="organization">Organization Package</option>
+                  <option value="enterprise">Enterprise Package</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label for="message">Tell us about your needs</label>
+                <textarea id="message" required placeholder="Describe your project or goals..."></textarea>
+              </div>
+              <button type="submit" class="btn-primary">Send Message</button>
+              <p id="formStatus" style="margin-top:16px;color:var(--muted);font-size:14px"></p>
+            </form>
+          </div>
+          <div class="contact-info">
+            <div class="info-card">
+              <h4>📧 Email Us</h4>
+              <p>hello@lide.co.za</p>
+              <p>support@lide.co.za</p>
+            </div>
+            <div class="info-card">
+              <h4>📞 Call Us</h4>
+              <p>+27 71 000 0000</p>
+              <p>Mon - Fri: 8:00 - 17:00</p>
+            </div>
+            <div class="info-card">
+              <h4>📍 Location</h4>
+              <p>Johannesburg, South Africa</p>
+              <p>Remote-friendly services</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-section">
+          <h4>Navigation</h4>
+          <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">Company</a></li>
+            <li><a href="#why-choose">Blog</a></li>
+            <li><a href="#packages">Products</a></li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h4>Resources</h4>
+          <ul>
+            <li><a href="#contact">Support</a></li>
+            <li><a href="#">Careers</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Terms of Service</a></li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h4>Connect</h4>
+          <div class="social-links">
+            <a href="#" aria-label="Facebook">f</a>
+            <a href="#" aria-label="Twitter">𝕏</a>
+            <a href="#" aria-label="LinkedIn">in</a>
+            <a href="#" aria-label="Instagram">📷</a>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© <span id="year"></span> 2025 LIDE. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
